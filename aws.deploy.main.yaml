@@ -1,0 +1,45 @@
+---
+apiVersion: v1
+kind: Service # Type of kubernetes resource
+metadata:
+  name: congdoan-landing # Unique name of the resource
+spec:
+  type: NodePort
+  ports:
+    - name: http
+      port: 80
+      targetPort: 19045
+  selector:
+    app: congdoan-landing
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: congdoan-landing
+  labels:
+    app: congdoan-landing
+spec:
+  replicas: 1 # Run a single pod in the deployment1
+  template: # Template for the pods that will be created by this deployment
+    metadata:
+      labels: # Labels to be applied to the Pods in this deployment
+        app: congdoan-landing
+    spec:
+      containers:
+        - name: congdoan-landing
+          image: {{IMAGE}}
+          resources:
+            requests:
+              memory: '64Mi'
+              cpu: '30m'
+            limits:
+              memory: '1000Mi'
+              cpu: '900m'
+          ports:
+            - containerPort: 19045
+          # envFrom:
+          #   - configMapRef:
+          #       name: congdoan-landing-env
+  selector:
+    matchLabels:
+      app: congdoan-landing

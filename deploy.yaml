@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: Service # Type of kubernetes resource
+metadata:
+  name: paydi-merchant-web-service # Unique name of the resource
+spec:
+  type: NodePort
+  ports:
+    - name: http
+      port: 80
+      targetPort: 19020
+  selector:
+    app: paydi-merchant-web-service # Map any pod with label `app=mgreen-api` to this service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: paydi-merchant-web-service
+  labels:
+    app: paydi-merchant-web-service
+spec:
+  replicas: 1 # Run a single pod in the deployment
+  template: # Template for the pods that will be created by this deployment
+    metadata:
+      labels: # Labels to be applied to the Pods in this deployment
+        app: paydi-merchant-web-service
+    spec:
+      containers:
+        - name: paydi-merchant-web-service
+          image: registry.gitlab.com/mediaone1/paydi-merchant-web:prod-{{IMAGE_VERSION}}
+          resources:
+            requests:
+              memory: '64Mi'
+              cpu: '15m'
+          ports:
+            - containerPort: 19020
+
+      imagePullSecrets:
+        - name: gitlab-registry-credentials
+  selector:
+    matchLabels:
+      app: paydi-merchant-web-service

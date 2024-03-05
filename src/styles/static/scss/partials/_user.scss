@@ -1,0 +1,123 @@
+/*---------- example css ----------*/
+.c-user-container {
+	padding: 60px 0;
+
+	.c-content {
+		font-size: 16px;
+
+		.c-flex {
+			display: flex;
+			flex-direction: column;
+			.c-width-1 {
+				width: 100%;
+				.c-img {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 20px;
+					label {
+						margin-top: 5px;
+						width: 150px;
+						height: 150px;
+						position: relative;
+						z-index: 1;
+						img {
+							width: 100%;
+							height: 100%;
+						}
+						.is-hover {
+							position: absolute;
+							z-index: 2;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							background: rgba(#000, 0.2);
+							@include transition-default;
+							visibility: hidden;
+							opacity: 0;
+							img {
+								width: 80px;
+								height: 80px;
+							}
+						}
+						&:hover {
+							.is-hover {
+								visibility: visible;
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+			.c-width-2 {
+				width: 100%;
+				.c-input {
+					margin-bottom: 20px;
+					input {
+						margin: 5px 0 15px;
+					}
+				}
+			}
+		}
+
+		.c-btn {
+			padding: 20px 0;
+		}
+	}
+}
+
+//example responsive css
+@media (min-width: $screen-sm-min) {
+	//mobile lanscape
+}
+
+@media (min-width: $screen-md-min) {
+	//ipad portrait
+}
+
+@media (min-width: $screen-lg-min) {
+	//ipad lanscape & pc 1024x768px
+	.c-user-container {
+		.c-content {
+			font-size: 18px;
+			.c-flex {
+				flex-direction: row;
+				.c-width-1 {
+					width: 33%;
+					.c-img {
+						label {
+							width: 300px;
+							height: 300px;
+
+							img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+					}
+				}
+				.c-width-2 {
+					width: 67%;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-xl-min) {
+	//pc & mac 1280px grow up
+}
+
+@media (min-width: 1440px) {
+	//pc & mac 1440px grow up
+}
+
+@media (min-width: 1900px) {
+	//pc & mac 1900px grow up
+}
+
+//end example responsive css
+/*---------- end example css ----------*/

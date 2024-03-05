@@ -1,0 +1,77 @@
+// @font-face {
+// 	font-family: 'UTM Penumbra';
+// 	src: url('../fonts/UTMPenumbra.eot');
+// 	src: url('../fonts/UTMPenumbra.eot?#iefix') format('embedded-opentype'), url('../fonts/UTMPenumbra.woff2') format('woff2'),
+// 		url('../fonts/UTMPenumbra.woff') format('woff'), url('../fonts/UTMPenumbra.ttf') format('truetype'),
+// 		url('../fonts/UTMPenumbra.svg#UTMPenumbra') format('svg');
+// 	font-style: normal;
+// 	font-display: swap;
+// }
+// @font-face {
+// 	font-family: 'UTM Penumbra';
+// 	src: url('../fonts/UTMPenumbraBold.eot');
+// 	src: url('../fonts/UTMPenumbraBold.eot?#iefix') format('embedded-opentype'),
+// 		url('../fonts/UTMPenumbraBold.woff2') format('woff2'), url('../fonts/UTMPenumbraBold.woff') format('woff'),
+// 		url('../fonts/UTMPenumbraBold.ttf') format('truetype'), url('../fonts/UTMPenumbraBold.svg#UTMPenumbraBold') format('svg');
+// 	font-style: normal;
+// 	font-weight: 700;
+// 	font-display: swap;
+// }
+
+@font-face {
+	font-family: 'UTM Centur';
+	src: url('../fonts/UTMCenturBold.eot');
+	src: url('../fonts/UTMCenturBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UTMCenturBold.woff2') format('woff2'), url('../fonts/UTMCenturBold.woff') format('woff'),
+		url('../fonts/UTMCenturBold.ttf') format('truetype'), url('../fonts/UTMCenturBold.svg#UTMCenturBold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'UTM Centur';
+	src: url('../fonts/UTMCentur.eot');
+	src: url('../fonts/UTMCentur.eot?#iefix') format('embedded-opentype'), url('../fonts/UTMCentur.woff2') format('woff2'),
+		url('../fonts/UTMCentur.woff') format('woff'), url('../fonts/UTMCentur.ttf') format('truetype'),
+		url('../fonts/UTMCentur.svg#UTMCentur') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-Light.eot');
+	src: url('../fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Light.woff2') format('woff2'), url('../fonts/MyriadPro-Light.woff') format('woff'),
+		url('../fonts/MyriadPro-Light.ttf') format('truetype'), url('../fonts/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-LightSemiCnIt.eot');
+	src: url('../fonts/MyriadPro-LightSemiCnIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-LightSemiCnIt.woff2') format('woff2'),
+		url('../fonts/MyriadPro-LightSemiCnIt.woff') format('woff'),
+		url('../fonts/MyriadPro-LightSemiCnIt.ttf') format('truetype'),
+		url('../fonts/MyriadPro-LightSemiCnIt.svg#MyriadPro-LightSemiCnIt') format('svg');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

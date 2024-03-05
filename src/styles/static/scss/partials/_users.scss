@@ -1,0 +1,44 @@
+.c-manage-user-page {
+	padding: 20px;
+	.is-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		p {
+			font-size: 20px;
+			font-weight: 700;
+		}
+		.btn {
+			padding: 10px 30px;
+			font-size: 16px;
+		}
+	}
+	.is-search {
+		padding-left: 10px;
+		display: flex;
+		margin-bottom: 10px;
+		button {
+			padding: 5px 20px;
+			border-radius: 5px;
+			display: inline-block;
+			outline: none;
+			border: none;
+			width: 60px;
+			margin-left: 10px;
+			background-color: blue;
+			color: white;
+		}
+	}
+}
+
+.is-button-close {
+	background-color: darkgray;
+}
+
+.is-button-save {
+	background-color:dodgerblue;
+}
+
+.is-button-delete{
+	background-color: red;
+}

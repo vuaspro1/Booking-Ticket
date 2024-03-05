@@ -1,0 +1,96 @@
+﻿//color base
+$color-white: #fff;
+$color-blue: #4dc4e3;
+
+//color site
+$color-bg: #e4e4e4;
+$color-bg2: #ececec;
+$color-link: $color-blue;
+$color-link-hover: #0000ff;
+$color-button-hover: #708741;
+$color-text: #333;
+$color-border: #ddd;
+$color-time: #999;
+$color-link-voted: #ffd965;
+$color-bg-voted: #92d050;
+$color-shadow-1: #202763;
+$color-placeholder: #c1c5cc;
+
+//color main
+$color-primary: #708741;
+$color-secondary: #ffe451;
+$color-info: #17a2b8;
+//$color-success: #28a745;
+//$color-warning: #ffc107;
+//$color-danger: #dc3545;
+$color-light: #fcb800;
+//$color-dark: #343a40;
+
+//color list
+$color-black: #000;
+$color-bg1: #28262d;
+$color-bg2: #ececec;
+// $color-green-about: #288123;
+// $color-green: #37b030;
+// $color-green-shadow: #268e19;
+// $color-text-shadow: #f9c776;
+$color-gray: #4a4a4a;
+// $color-text-count-shadow: #f8b852;
+// $color-title-h2: #032348;
+//$color-indigo: #6610f2;
+// $color-purple: #1a0467;
+//$color-pink: #e83e8c;
+//$color-red: #dc3545;
+//$color-orange: #fd7e14;
+//$color-yellow: #ffc107;
+//$color-green: #28a745;
+//$color-teal: #20c997;
+//$color-cyan: #17a2b8;
+//$color-gray: #6c757d;
+//$color-gray-dark: #343a40;
+
+//width
+$container-sm: 375px;
+$container-sm-number: 375;
+$container-md: 698px;
+$container-md-number: 698;
+$container-lg: 970px;
+$container-lg-number: 970;
+$container-xl: 1100px;
+$container-xl-number: 1100;
+
+//grid size
+$screen-xs: 0;
+$screen-xs-min: $screen-xs;
+$screen-sm: 375px;
+$screen-sm-min: $screen-sm;
+$screen-md: 768px;
+$screen-md-min: $screen-md;
+$screen-lg: 992px;
+$screen-lg-min: $screen-lg;
+$screen-xl: 1280px;
+$screen-xl-min: $screen-xl;
+
+//grid size max
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+$screen-lg-max: ($screen-xl - 1);
+
+//font
+$font-umbra: 'UTM Penumbra';
+$font-sour: 'Source Sans Pro';
+// $font-lato: 'Lato', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-open-sans: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-awesome: 'FontAwesome';
+$font-awesome-5-free: 'Font Awesome 5 Free';
+$font-centur: 'UTM Centur';
+$font-myriad: 'Myriad Pro';
+
+$font-site: $font-myriad;
+// $font-muli: 'Muli', sans-serif;
+
+//font size
+$font-size-xs: 14px;
+$line-height-xs: 20px;
+$font-size-sm: 14px;
+$line-height-sm: 20px;

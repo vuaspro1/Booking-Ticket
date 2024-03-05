@@ -1,0 +1,58 @@
+version: '3.3'
+
+# KHAI BÁO CÁC DỊCH VỤ
+services:
+  # TÊN DỊCH VỤ
+  api:
+    build:
+      context: .
+    # TÊN IMAGE TẠO TẠO CONTAINER
+    image: phongnv86/front-web-vndirect
+    # env_file: docker-compose.env
+    # hostname: namanapi
+    # depends_on:
+    # - redis
+    # networks:
+    # - internal
+    # - mpoint-network
+
+    # ÁNH XẠ CỔNG MÁY HOST VÀO CỔNG CONTAINER
+    ports:
+      - 13013:13013
+
+    # stdin_open: true
+
+    ## CHÍNH SÁCH KHỞI ĐỘNG
+    restart: unless-stopped
+
+    ## ĐẶT TÊN CONTAINER
+    container_name: front-web-vndirect
+
+    ## THÊM BIẾN MÔI TRƯỜNG
+    environment:
+      - NODE_ENV=production
+
+    ## GẮN Ổ ĐĨA, THƯ MỤC VÀO CONTAINER
+    # volumes:
+    #   - namanupload:/app/upload
+
+    command: yarn start
+
+# TẠO NETWORK
+networks:
+  default:
+    # external:
+    #   name: naman_naman-network
+#  ---------------------------------------------------------------------------------------
+# KHAI BÁO VOLUME
+# volumes:
+#   namanupload:
+#     driver: local
+#     driver_opts:
+#       type: none
+#       device: "/home/naman/upload"
+#       o: bind
+#   conf:
+#   certs:
+#   vhost:
+#   html:

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+docker rmi $(docker images "phongnv86/front-web-vndirect" -q)
+if [ "$1" == "" ]; then
+  echo "not found version..."
+else
+  echo $1 > .version
+  echo "docker building image version"
+  echo $1
+  docker build -t phongnv86/front-web-vndirect:"$1" -f Dockerfile .
+  echo "docker pushing image version"
+  echo $1
+  sleep 1
+  docker push phongnv86/front-web-vndirect:"$1"
+fi
+
+# echo "docker compose down..."
+# docker-compose down
+# echo "deleting phongnv86/front-web-vndirect:latest..."
+# sleep 1
+# docker rmi phongnv86/front-web-eyemiru:latest
+# echo "docker-compose up ..."
+# docker-compose -f docker-compose.yml up -d --force-recreate

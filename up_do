@@ -1,0 +1,20 @@
+#!/bin/bash
+docker-compose down
+#docker rmi $(docker images "phongnv86/naman-api" -q)
+#docker rmi $(docker images "phongnv86/naman-admin" -q)
+#docker rmi $(docker images "phongnv86/naman-csh" -q)
+#docker rmi $(docker images "phongnv86/naman-web" -q)
+echo $1 > .version
+# export IMAGE_API_VERSION=$1;
+# export IMAGE_ADMIN_VERSION=$2;
+# export IMAGE_CSH_VERSION=$3;
+export IMAGE_WEB_VERSION=$4;
+docker-compose -f /home/naman/docker-compose.prod.yml up -d --force-recreate
+# docker exec -it naman-api-container nginx
+# docker run --detach \
+#     --name naman-nginx-letsencrypt-container \
+#     --volumes-from naman-nginx-container \
+#     --volume /var/run/docker.sock:/var/run/docker.sock:ro \
+#     --env "DEFAULT_EMAIL=phongnv@media-one.vn" \
+#     jrcs/letsencrypt-nginx-proxy-companion
+#cat "docker-compose.prod.yml" | sed "s/{{IMAGE_VERSION}}/v$1/g" | docker-compose -f up -d

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import 'bootstrap/bootstrap.scss';
+// @import 'rsuite/dist/rsuite.min.css';
+@import '/node_modules/swiper/swiper.scss';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+@import 'antd/default.css';
+@import '~antd/lib/image/style/index.css';
+
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/thumbs';
+
+@import '~react-toastify/dist/ReactToastify.css';
+@import 'css/index.scss';
+@import 'static/scss/style.scss';
+@import '../../node_modules/aos/src/sass/aos.scss';

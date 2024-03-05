@@ -1,0 +1,12 @@
+# docker
+docker_do
+docker-compose.env
+docker-compose.prod.yml
+docker-compose.yml
+up_do
+node_modules
+.dockerignore
+Dockerfile
+.env
+.env.development
+.env.production

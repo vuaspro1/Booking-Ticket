@@ -1,0 +1,34 @@
+/*---------- example css ----------*/
+.c-footer {
+	background: #fcd971;
+	padding: 15px 0;
+	a {
+		text-decoration: none;
+		color: #ef0000;
+		font-weight: 700;
+	}
+}
+
+//example responsive css
+@media (min-width: $screen-sm-min) {
+	//mobile lanscape
+}
+
+@media (min-width: $screen-md-min) {
+	//ipad portrait
+}
+
+@media (min-width: $screen-lg-min) {
+	//ipad lanscape & pc 1024x768px
+}
+
+@media (min-width: 1440px) {
+	//pc & mac 1440px grow up
+}
+
+@media (min-width: 1900px) {
+	//pc & mac 1900px grow up
+}
+
+//end example responsive css
+/*---------- end example css ----------*/

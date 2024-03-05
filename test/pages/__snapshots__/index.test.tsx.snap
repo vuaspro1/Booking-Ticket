@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders a heading 1`] = `
+<div>
+  <div
+    class="c-page-loading"
+  >
+    <div
+      class="c-loadingcs"
+    >
+      <div
+        class="lds-spinner"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+    </div>
+  </div>
+</div>
+`;

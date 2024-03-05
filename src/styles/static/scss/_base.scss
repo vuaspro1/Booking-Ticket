@@ -1,0 +1,45 @@
+/*---------- base css ----------*/
+body {
+	// background: $color-bg;
+	font-family: $font-site;
+	font-size: $font-size-xs;
+	line-height: 1;
+	overflow-x: hidden;
+	&.no-scroll {
+		overflow-y: hidden;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $font-site;
+}
+a {
+	color: $color-link;
+	@include transition-default;
+}
+a:focus {
+	outline: none;
+	padding: 0;
+}
+/*---------- end base css ----------*/
+button {
+	@include transition-default;
+}
+@media (min-width: 1024px) {
+	//ipad lanscape & pc 1024x768px
+	button {
+		&:hover {
+			background: rgba(#000, 0.3) !important;
+		}
+	}
+}

@@ -1,0 +1,89 @@
+/*---------- example css ----------*/
+.c-login-bg {
+	height: 100vh;
+	@include linear-gradient(to right, #644ed3, #d61d34);
+	position: relative;
+	z-index: 1;
+}
+.c-login-box {
+	position: absolute;
+	z-index: 2;
+	max-width: 370px;
+	width: 100%;
+	margin: auto;
+	top: 50%;
+	left: 50%;
+	@include transform(translate(-50%, -50%));
+	text-align: center;
+	img {
+		max-width: 240px;
+		margin: auto;
+		display: block;
+		margin-bottom: 20px;
+	}
+	&__input {
+		border-radius: 39px !important;
+		overflow: hidden;
+		border: 0;
+		margin-bottom: 25px;
+		input {
+			text-align: center;
+			background: rgba($color-white, 0.5);
+			@include placeholder(#96398f, $font-site);
+			font-size: 20px;
+		}
+	}
+	a {
+		color: $color-white;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	span {
+		color: $color-white;
+	}
+	button {
+		background-color: #96398f;
+		border: 1px solid $color-white;
+		color: $color-white;
+		font-size: 25px;
+		text-align: center;
+		@include border-radius(39px);
+		padding: 15px 0;
+	}
+}
+.c-login-popup {
+	input {
+		font-family: $font-open-sans;
+	}
+	.rs-modal-content {
+		padding: 0;
+		.rs-modal-body {
+			padding: 0;
+			margin: 0;
+			max-height: 450px !important;
+		}
+	}
+}
+//example responsive css
+@media (min-width: $screen-sm-min) {
+	//mobile lanscape
+}
+@media (min-width: $screen-md-min) {
+	//ipad portrait
+}
+@media (min-width: $screen-lg-min) {
+	//ipad lanscape & pc 1024x768px
+}
+@media (min-width: $screen-xl-min) {
+	//pc & mac 1280px grow up
+}
+@media (min-width: 1440px) {
+	//pc & mac 1440px grow up
+}
+@media (min-width: 1900px) {
+	//pc & mac 1900px grow up
+}
+//end example responsive css
+/*---------- end example css ----------*/
